@@ -1,12 +1,19 @@
 Attribute VB_Name = "Module1"
 Sub yearlyStockAnalysis()
   Dim ws As Worksheet
+  
+  ' Loop thru all worksheets in the work book
+    For Each ws In ActiveWorkbook.Worksheets
+        With ws
+            .Select
+            Call stockAnalysis 'Analyze the stock data for each worksheet/year
+        End With
+        
+    Next
+End Sub
 
 'Print two new tables on each sheet to summarize that sheet's stock data
 
-    ' --------------------------------------------
-    ' LOOP THROUGH ALL SHEETS
-    ' --------------------------------------------
     For Each ws In Worksheets
 
         'Print the headers for table one
