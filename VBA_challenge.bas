@@ -3,10 +3,7 @@ Sub Stocks():
 
 'Print two new tables on each sheet to summarize that sheet's stock data
 
-    ' --------------------------------------------
-    ' LOOP THROUGH ALL SHEETS
-    ' --------------------------------------------
-    For Each ws In Worksheets
+   For Each ws In Worksheets
 
         'Print the headers for table one
         
@@ -216,10 +213,7 @@ Sub Reset():
 
 'This subroutine is for testing purposes only. It resets all sheets in the Workbook back to their pre-populate state.
 
-    ' --------------------------------------------
-    ' LOOP THROUGH ALL SHEETS
-    ' --------------------------------------------
-    For Each ws In Worksheets
+   For Each ws In Worksheets
 
     'Reset the worksheet to its original state
     
